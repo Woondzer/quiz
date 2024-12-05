@@ -1,11 +1,17 @@
+import BartSounds from "./bartSounds.js";
+
 fetch('quiz.json')
     .then((response) => response.json())
-    .then((data) => new QuizGame(data));
+    .then((data) => {
+        const bartSounds = new BartSounds()
+        new QuizGame(data, bartSounds)
+    });
 
 
 class QuizGame {
-    constructor(quizData) {
+    constructor(quizData, bartSounds) {
         this.quizData = quizData.quiz;
+        this.bartSounds = bartSounds;
         this.selectedQuestions = this.getRandomQuestions(10);
         this.currentQuestionIndex = 0;
         this.score = 0;
@@ -131,21 +137,24 @@ class QuizGame {
         if (selectedOption === correctAnswer) {
             this.score++;
             feedbackDiv.textContent = "Correct!";
+            this.bartSounds.playWinSound();
             setTimeout(() => {
                 this.nextQuestion();
             }, 2000);
 
         } else if(selectedOption === null) {
             feedbackDiv.textContent = `Time's up, the correct answer is: ${correctAnswer}`;
+            this.bartSounds.playLoseSound();
             this.renderNextButton();
 
         } else {
             feedbackDiv.textContent = `Wrong! The correct answer is: ${correctAnswer}`;
+            this.bartSounds.playLoseSound();
             setTimeout(() => {
                 this.nextQuestion();
             }, 2000);
         }
-        optionsDiv.querySelectorAll('option-btn').forEach(btn => btn.disabled = true);
+        optionsDiv.querySelectorAll('.option-btn').forEach(btn => btn.disabled = true);
     }
 
     renderNextButton() {
