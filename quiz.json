@@ -1,0 +1,460 @@
+{
+    "quiz": [
+      {
+        "question": "What is the name of the three-eyed fish found near the nuclear power plant?",
+        "options": ["Spotty", "Blinky", "Gilly"],
+        "answer": "Blinky"
+      },
+      {
+        "question": "What instrument does Lisa Simpson play?",
+        "options": ["Guitar", "Saxophone", "Piano"],
+        "answer": "Saxophone"
+      },
+      {
+        "question": "In which episode does Homer say the famous line, \"D'oh!\" for the first time?",
+        "options": ["Simpsons Roasting on an Open Fire", "Bart the Genius", "Homer's Odyssey"],
+        "answer": "Bart the Genius"
+      },
+      {
+        "question": "What is Marge's maiden name?",
+        "options": ["Bouvier", "Van Houten", "Wiggum"],
+        "answer": "Bouvier"
+      },
+      {
+        "question": "What is the name of the Simpsons' neighbor who is overly religious?",
+        "options": ["Seymour Skinner", "Ned Flanders", "Chief Wiggum"],
+        "answer": "Ned Flanders"
+      },
+      {
+        "question": "In the episode \"Homer at the Bat,\" what is the name of the Springfield Nuclear Power Plant's softball team?",
+        "options": ["The Isotopes", "The Pin Pals", "The Power Plant Pros"],
+        "answer": "The Isotopes"
+      },
+      {
+        "question": "What is the name of Bart's evil twin in the Treehouse of Horror episode?",
+        "options": ["Roy", "Sideshow Bob", "Hugo"],
+        "answer": "Hugo"
+      },
+      {
+        "question": "What catchphrase does Ralph Wiggum often say?",
+        "options": ["\"I'm in danger!\"", "\"Don't have a cow, man!\"", "\"My cat's breath smells like cat food.\""],
+        "answer": "\"My cat's breath smells like cat food.\""
+      },
+      {
+        "question": "In which episode does Maggie shoot Mr. Burns?",
+        "options": ["Who Shot Mr. Burns? Part Two", "Who Shot Mr. Burns? Part One", "Burns' Heir"],
+        "answer": "Who Shot Mr. Burns? Part Two"
+      },
+      {
+        "question": "What is Krusty the Clown's real name?",
+        "options": ["Herschel Shmoikel Krustofsky", "Melvin Krustowski", "Irving Zuckerman"],
+        "answer": "Herschel Shmoikel Krustofsky"
+      },
+      {
+        "question": "What is Bart Simpson's full name?",
+        "options": ["Bartholomew Jojo Simpson", "Bartford Jojo Simpson", "Bartley Jojo Simpson"],
+        "answer": "Bartholomew Jojo Simpson"
+      },
+      {
+        "question": "What is the name of the bartender at Moe's Tavern?",
+        "options": ["Lenny Leonard", "Barney Gumble", "Moe Szyslak"],
+        "answer": "Moe Szyslak"
+      },
+      {
+        "question": "What is the name of Homer's favorite beer?",
+        "options": ["Duff Beer", "Buzz Beer", "Barney's Brew"],
+        "answer": "Duff Beer"
+      },
+      {
+        "question": "Which Springfield resident is known for his loud laugh?",
+        "options": ["Kearney Zzyzwicz", "Nelson Muntz", "Jimbo Jones"],
+        "answer": "Nelson Muntz"
+      },
+      {
+        "question": "What is the name of the Simpsons' pet dog?",
+        "options": ["Spunky", "Santa's Little Helper", "Snowball"],
+        "answer": "Santa's Little Helper"
+      },
+      {
+        "question": "What is the name of the school bus driver in Springfield?",
+        "options": ["Waylon Smithers", "Otto Mann", "Seymour Skinner"],
+        "answer": "Otto Mann"
+      },
+      {
+        "question": "Who is the founder of Springfield?",
+        "options": ["Shelbyville Manhattan", "Cornelius Chapman", "Jebediah Springfield"],
+        "answer": "Jebediah Springfield"
+      },
+      {
+        "question": "What is the name of the Simpsons' cat?",
+        "options": ["Snowball II", "Felix", "Whiskers"],
+        "answer": "Snowball II"
+      },
+      {
+        "question": "What store does Apu Nahasapeemapetilon own?",
+        "options": ["Kwik-E-Mart", "7-Eleven", "Springfield Grocery"],
+        "answer": "Kwik-E-Mart"
+      },
+      {
+        "question": "Who is the owner of the Springfield Nuclear Power Plant?",
+        "options": ["Charles Montgomery Burns", "Homer Simpson", "Waylon Smithers"],
+        "answer": "Charles Montgomery Burns"
+      },
+      {
+        "question": "What is the name of the Simpsons' baby?",
+        "options": ["Lisa", "Maggie", "Jessica"],
+        "answer": "Maggie"
+      },
+      {
+        "question": "Which character is known for saying, \"Excellent\"?",
+        "options": ["Homer Simpson", "Ned Flanders", "Mr. Burns"],
+        "answer": "Mr. Burns"
+      },
+      {
+        "question": "What is Homer's favorite food?",
+        "options": ["Pizza", "Hot Dogs", "Donuts"],
+        "answer": "Donuts"
+      },
+      {
+        "question": "What is the name of Springfield's mayor?",
+        "options": ["Lou", "Joe Quimby", "Rex Banner"],
+        "answer": "Joe Quimby"
+      },
+      {
+        "question": "Who is Bart's best friend?",
+        "options": ["Milhouse Van Houten", "Martin Prince", "Nelson Muntz"],
+        "answer": "Milhouse Van Houten"
+      },
+      {
+        "question": "What is Lisa's favorite subject in school?",
+        "options": ["History", "Music", "Math"],
+        "answer": "Music"
+      },
+      {
+        "question": "Which character runs the comic book store?",
+        "options": ["Comic Book Guy", "Seymour Skinner", "Lenny Leonard"],
+        "answer": "Comic Book Guy"
+      },
+      {
+        "question": "What is the name of Krusty the Clown's TV show?",
+        "options": ["Clown Time", "Krusty’s Circus", "The Krusty the Clown Show"],
+        "answer": "The Krusty the Clown Show"
+      },
+      {
+        "question": "What job does Waylon Smithers have?",
+        "options": ["Nuclear Safety Inspector", "Bartender", "Assistant to Mr. Burns"],
+        "answer": "Assistant to Mr. Burns"
+      },
+      {
+        "question": "What type of animal is Itchy from 'Itchy and Scratchy'?",
+        "options": ["Cat", "Mouse", "Dog"],
+        "answer": "Mouse"
+      },
+      {
+        "question": "What is the name of Springfield's church pastor?",
+        "options": ["Reverend Lovejoy", "Father Murphy", "Pastor John"],
+        "answer": "Reverend Lovejoy"
+      },
+      {
+        "question": "What is the name of Bart's teacher?",
+        "options": ["Agnes Skinner", "Edna Krabappel", "Elizabeth Hoover"],
+        "answer": "Edna Krabappel"
+      },
+      {
+        "question": "What is the name of Springfield's news anchor?",
+        "options": ["Troy McClure", "Kent Brockman", "Artie Ziff"],
+        "answer": "Kent Brockman"
+      },
+      {
+        "question": "Who is Marge's twin sister?",
+        "options": ["Selma", "Patty", "Both"],
+        "answer": "Both"
+      },
+      {
+        "question": "What is the name of Springfield's doctor?",
+        "options": ["Dr. Julius Hibbert", "Dr. Marvin Monroe", "Dr. Nick Riviera"],
+        "answer": "Dr. Julius Hibbert"
+      },
+      {
+        "question": "What is Bart's prank call pseudonym for Moe?",
+        "options": ["Both", "I.P. Freely", "Hugh Jass"],
+        "answer": "Both"
+      },
+      {
+        "question": "Who is Bart's nemesis in school?",
+        "options": ["Edna Krabappel", "Martin Prince", "Seymour Skinner"],
+        "answer": "Seymour Skinner"
+      },
+      {
+        "question": "What is the name of Marge's mother?",
+        "options": ["Mona Simpson", "Jacqueline Bouvier", "Eleanor Bouvier"],
+        "answer": "Jacqueline Bouvier"
+      },
+      {
+        "question": "What is the name of Homer’s half-brother?",
+        "options": ["Frank Grimes", "Artie Ziff", "Herb Powell"],
+        "answer": "Herb Powell"
+      },
+      {
+        "question": "What does Homer shout when he realizes he made a mistake?",
+        "options": ["Oh no!", "D'oh!", "Yikes!"],
+        "answer": "D'oh!"
+      },
+      {
+        "question": "What is the name of Bart's favorite comic book superhero?",
+        "options": ["The Plutonium Kid", "Radioactive Man", "Captain Springfield"],
+        "answer": "Radioactive Man"
+      },
+      {
+        "question": "What is Lisa's stance on meat consumption?",
+        "options": ["Pescatarian", "Vegetarian", "Vegan"],
+        "answer": "Vegetarian"
+      },
+      {
+        "question": "Who is Homer's boss at the power plant?",
+        "options": ["Carl Carlson", "Waylon Smithers", "Mr. Burns"],
+        "answer": "Mr. Burns"
+      },
+      {
+        "question": "What is the name of the bar where Homer hangs out?",
+        "options": ["Moe's Tavern", "Duff Bar", "The Drunken Barnacle"],
+        "answer": "Moe's Tavern"
+      },
+      {
+        "question": "What is the name of Springfield’s rival town?",
+        "options": ["Ogdenville", "Capital City", "Shelbyville"],
+        "answer": "Shelbyville"
+      },
+      {
+        "question": "What is the full name of Mr. Burns?",
+        "options": ["Charles Montgomery Burns", "Chester Montague Burns", "Cornelius Montgomery Burns"],
+        "answer": "Charles Montgomery Burns"
+      },
+      {
+        "question": "What is the name of the band Otto used to play in?",
+        "options": ["Sonic Youth", "The Screaming Yellow Honkers", "Spinal Tap"],
+        "answer": "The Screaming Yellow Honkers"
+      },
+      {
+        "question": "What is the name of the Springfield elementary school principal?",
+        "options": ["Edna Krabappel", "Seymour Skinner", "Groundskeeper Willie"],
+        "answer": "Seymour Skinner"
+      },
+      {
+        "question": "What is Bart Simpson's alter ego as a superhero?",
+        "options": ["Radioactive Boy", "Bartman", "El Barto"],
+        "answer": "Bartman"
+      },
+      {
+        "question": "What is the name of Springfield’s comic book store?",
+        "options": ["Comic Heaven", "Springfield Comics", "The Android's Dungeon"],
+        "answer": "The Android's Dungeon"
+      },
+      {
+        "question": "What is Milhouse's last name?",
+        "options": ["Van Houten", "Prince", "Muntz"],
+        "answer": "Van Houten"
+      },
+      {
+        "question": "Who is the voice of Itchy in the Itchy & Scratchy cartoons?",
+        "options": ["Troy McClure", "Roger Meyers Jr.", "Krusty the Clown"],
+        "answer": "Roger Meyers Jr."
+      },
+      {
+        "question": "What is the name of Ned Flanders' store for left-handed people?",
+        "options": ["The Leftorium", "Lefty's Emporium", "Lefty Haven"],
+        "answer": "The Leftorium"
+      },
+      {
+        "question": "What instrument does Bleeding Gums Murphy play?",
+        "options": ["Saxophone", "Trumpet", "Guitar"],
+        "answer": "Saxophone"
+      },
+      {
+        "question": "What is Homer's favorite catchphrase?",
+        "options": ["D'oh!", "Why you little!", "Woohoo!"],
+        "answer": "D'oh!"
+      },
+      {
+        "question": "What is the name of Springfield's baseball team?",
+        "options": ["The Springys", "The Isotopes", "The Power Hitters"],
+        "answer": "The Isotopes"
+      },
+      {
+        "question": "Who is the Springfield Elementary School bully with a skull shirt?",
+        "options": ["Kearney Zzyzwicz", "Jimbo Jones", "Nelson Muntz"],
+        "answer": "Jimbo Jones"
+      },
+      {
+        "question": "What type of business does Moe Szyslak own?",
+        "options": ["A bar", "A diner", "A bowling alley"],
+        "answer": "A bar"
+      },
+      {
+        "question": "What is the name of Homer's brother's car company?",
+        "options": ["Powell Motors", "AutoWorld", "Homer's Rides"],
+        "answer": "Powell Motors"
+      },
+      {
+        "question": "What is the name of the episode where Bart sells his soul?",
+        "options": ["Soul For Sale", "Bart's Soul", "Bart Sells His Soul"],
+        "answer": "Bart Sells His Soul"
+      },
+      {
+        "question": "What is the name of the Springfield mascot for the nuclear power plant?",
+        "options": ["Nuclear Ned", "Atomic Bob", "Smilin' Joe Fission"],
+        "answer": "Smilin' Joe Fission"
+      },
+      {
+        "question": "What was the name of the Simpson family's first cat?",
+        "options": ["Snowflake", "Snowball II", "Snowball I"],
+        "answer": "Snowball I"
+      },
+      {
+        "question": "What is the name of the teacher that Bart has a crush on?",
+        "options": ["Ms. Hoover", "Ms. Albright", "Ms. Krabappel"],
+        "answer": "Ms. Albright"
+      },
+      {
+        "question": "What is Lisa's IQ?",
+        "options": ["159", "135", "145"],
+        "answer": "159"
+      },
+      {
+        "question": "What is the name of the violent TV show that Bart and Lisa love?",
+        "options": ["Itchy & Scratchy", "Tom & Jerry", "Cat & Mouse"],
+        "answer": "Itchy & Scratchy"
+      },
+      {
+        "question": "What is the name of the Simpsons' doctor known for his bad medical advice?",
+        "options": ["Dr. Monroe", "Dr. Nick Riviera", "Dr. Hibbert"],
+        "answer": "Dr. Nick Riviera"
+      },
+      {
+        "question": "Who is the mayor of Springfield?",
+        "options": ["Mayor Wiggum", "Mayor Burns", "Mayor Quimby"],
+        "answer": "Mayor Quimby"
+      },
+      {
+        "question": "What is the name of the Springfield Elementary janitor?",
+        "options": ["Groundskeeper Willie", "Otto Mann", "Seymour Skinner"],
+        "answer": "Groundskeeper Willie"
+      },
+      {
+        "question": "What is the name of Homer’s bowling team?",
+        "options": ["The Pin Pals", "The Bowl-A-Ramas", "The Homerunners"],
+        "answer": "The Pin Pals"
+      },
+      {
+        "question": "Who is Marge's chain-smoking sister?",
+        "options": ["Agnes", "Selma", "Patty"],
+        "answer": "Patty"
+      },
+      {
+        "question": "What is the name of Bart's French exchange student?",
+        "options": ["Martin", "César", "Adil"],
+        "answer": "Adil"
+      },
+      {
+        "question": "What is the name of the alien duo often featured in the Treehouse of Horror episodes?",
+        "options": ["Rigel and Zoidberg", "Kang and Kodos", "Kal-El and Jor-El"],
+        "answer": "Kang and Kodos"
+      },
+      {
+        "question": "What is the name of Homer's favorite barbershop quartet?",
+        "options": ["The Tone Deafs", "The Dapper Dans", "The Be Sharps"],
+        "answer": "The Be Sharps"
+      },
+      {
+        "question": "What is the name of Bart's teacher after Mrs. Krabappel's death?",
+        "options": ["Mr. Lassen", "Ms. Cantwell", "Ms. Hoover"],
+        "answer": "Ms. Cantwell"
+      },
+      {
+        "question": "What is the name of the rich Texan who owns half of Springfield?",
+        "options": ["Rich Texan", "Cattleman Smith", "Rex Banner"],
+        "answer": "Rich Texan"
+      },
+      {
+        "question": "What is the name of the Springfield Nuclear Power Plant’s safety mascot?",
+        "options": ["Atomic Bob", "Smilin' Joe Fission", "Mr. Sparkle"],
+        "answer": "Smilin' Joe Fission"
+      },
+      {
+        "question": "Who shot Mr. Burns?",
+        "options": ["Waylon Smithers", "Maggie", "Homer"],
+        "answer": "Maggie"
+      },
+      {
+        "question": "What is the name of Bart's pet elephant?",
+        "options": ["Dumbo", "Stampy", "Tiny"],
+        "answer": "Stampy"
+      },
+      {
+        "question": "What is the name of Lisa’s jazz mentor?",
+        "options": ["Billie Sax", "Sunny McJazz", "Bleeding Gums Murphy"],
+        "answer": "Bleeding Gums Murphy"
+      },
+      {
+        "question": "What is Krusty the Clown's father's profession?",
+        "options": ["Rabbi", "Clown", "Musician"],
+        "answer": "Rabbi"
+      },
+      {
+        "question": "What is the name of Moe’s secret drink recipe?",
+        "options": ["Moe's Secret Tonic", "The Flaming Moe", "The Burnt Duff"],
+        "answer": "The Flaming Moe"
+      },
+      {
+        "question": "What is the name of the clown who inspired Krusty?",
+        "options": ["Bozo", "Rusty Nails", "Krusty Sr."],
+        "answer": "Rusty Nails"
+      },
+      {
+        "question": "What is the name of the school Lisa attended for gifted children?",
+        "options": ["Springfield Gifted Academy", "Springfield Magnet School", "The Enriched Center"],
+        "answer": "Springfield Magnet School"
+      },
+      {
+        "question": "What is the name of Springfield's rival nuclear power plant?",
+        "options": ["Capital City Power", "Shelbyville Nuclear", "Ogdenville Energy"],
+        "answer": "Shelbyville Nuclear"
+      },
+      {
+        "question": "What is Homer's middle name?",
+        "options": ["Jebediah", "Joe", "Jay"],
+        "answer": "Jay"
+      },
+      {
+        "question": "What is Bart’s favorite video game?",
+        "options": ["Eat My Shorts", "Space Blasters", "Bonestorm"],
+        "answer": "Bonestorm"
+      },
+      {
+        "question": "What was Lisa's first word?",
+        "options": ["Homer", "Bart", "Mommy"],
+        "answer": "Bart"
+      },
+      {
+        "question": "What is the name of the Springfield Retirement Castle resident often seen with Grandpa Simpson?",
+        "options": ["Gil", "Hans Moleman", "Jasper"],
+        "answer": "Jasper"
+      },
+      {
+        "question": "What is the name of the power-hungry Springfield billionaire?",
+        "options": ["Rich Texan", "Artie Ziff", "Charles Montgomery Burns"],
+        "answer": "Charles Montgomery Burns"
+      },
+      {
+        "question": "What is the name of the reality TV show Bart stars in?",
+        "options": ["Don't Have a Cow!", "The Bart Show", "Bart Wars"],
+        "answer": "Don't Have a Cow!"
+      },
+      {
+        "question": "What is the name of Bart’s babysitter who turns out to be a criminal?",
+        "options": ["Ms. Hoover", "Ms. Albright", "Ms. Botz"],
+        "answer": "Ms. Botz"
+      }
+    ]
+  }
+  

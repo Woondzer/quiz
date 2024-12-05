@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Simpsons';
+    src: url(./fonts/Simpsonfont.ttf);
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Simpsons', sans-serif;
+    background-image: url(./img/start.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+}
+
+
+
+#root {
+    position: relative; 
+    z-index: 10;
+    padding: 20px;
+}
+
+.intro-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+    z-index: -1; 
+    opacity: 0; 
+    transition: opacity 2s ease-in-out; 
+}
+
+.fade-in {
+    opacity: 1; 
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    rotate: 2.2deg;
+    
+}
+
+.question {
+    width: 70%;
+    color: rgb(229, 217, 0);
+    font-size: 38px;
+    margin: 20px 0px;
+    
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.options:hover {
+    cursor: pointer;
+}
+
+.option-btn {
+    font-family: 'Simpsons', sans-serif;
+    color: rgb(229, 217, 0);
+    background: none;
+    border: none;
+}
+
+.feedback {
+    color: rgb(229, 217, 0);
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.score {
+    color: rgb(229, 217, 0);
+}
+
+.timer {
+    color: rgb(229, 217, 0);
+
+    margin: 50px;
+}
+
+#timer-count {
+    color: rgb(229, 217, 0);
+}
