@@ -28,6 +28,24 @@ body {
     padding: 20px;
 }
 
+button {
+    box-shadow: 0px 0px 0px 4px rgb(5, 139, 5);
+    border: 3px solid white;
+    border-radius: 8px;
+    background: rgb(5, 139, 5);
+    color: white;
+    font-family: 'Simpsons', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#start-btn {
+    padding: 10px 52px;      
+    font-size: 19px;
+}
+
 .intro-background {
     position: fixed;
     top: 0;
@@ -43,20 +61,14 @@ body {
 .fade-in {
     opacity: 1; 
 }
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-}
 
 #skip-btn {
     position: fixed;
     z-index: 20;
     bottom: 20px;
     right: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 10px 52px;  
+    font-size: 19px;
 }
 
 .game-container {
@@ -67,6 +79,7 @@ button {
     justify-content: center;
     align-items: center;
     rotate: 2.2deg;
+    position: relative;
     
 }
 
@@ -94,6 +107,26 @@ button {
     color: rgb(229, 217, 0);
     background: none;
     border: none;
+    box-shadow: none;
+    margin: 15px;
+}
+
+#next-btn {
+    bottom: 20px;
+    right: 20px;
+}
+
+#restart-btn {
+    position: fixed;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 4px rgb(5, 139, 5);
+    border: 3px solid white;
+    border-radius: 8px;
+    padding: 10px 52px;    
+    font-size: 19px;
+    background: rgb(5, 139, 5);
+    color: white;
+    font-family: 'Simpsons', sans-serif;
 }
 
 .feedback {
@@ -103,7 +136,12 @@ button {
 }
 
 .score {
-    color: rgb(229, 217, 0);
+    position: absolute; /* Position the score relative to .game-container */
+    top: 150px; /* Distance from the top of .game-container */
+    right: 400px; /* Distance from the right of .game-container */
+    color: rgb(229, 217, 0); /* Retain existing color */
+    font-size: 30px; 
+    font-family: 'Simpsons', sans-serif; 
 }
 
 .timer {
