@@ -39,10 +39,22 @@ class QuizGame {
             intro.classList.add("fade-in");
         }, 100);
 
+        const skipButton = document.createElement("button");
+        skipButton.textContent = "Skip";
+        skipButton.id = "skip-btn";
+
+        document.body.appendChild(skipButton);
+
+        skipButton.addEventListener("click", () => {
+            intro.src = "./movie/simpsonNEWshortVersion.mp4";
+            intro.play();
+            skipButton.remove();
+        });
+
         intro.addEventListener("ended", () => {
             this.startGame();
-            // intro.remove();  får se om vi har kvar videon eller tar bort den. 
-        })
+            skipButton.remove();
+        });
     }
 
     startGame() {
@@ -59,6 +71,8 @@ class QuizGame {
         }
         return shuffled.slice(0, count);
     }
+
+    
 
     renderQuestion() {
         if (this.currentQuestionIndex >= this.selectedQuestions.length) {
