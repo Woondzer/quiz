@@ -172,9 +172,11 @@ class QuizGame {
 
     renderEndPage() {
         this.root.innerHTML = `
-            <div class="question">Game Over!</div>
-            <div class="score">Your final score: ${this.score}</div>
-            <button id="restart-btn">Restart Game</button>
+            <div id="end-container">
+                <div class="end-message">Game Over!</div>
+                <div class="final-score">Your final score: ${this.score}</div>
+                <button id="restart-btn">Restart Game</button>
+            </div>
         `;
         document.getElementById("restart-btn").addEventListener("click", () => this.startGame());
     }

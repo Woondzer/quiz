@@ -10,6 +10,10 @@ html, body, #root {
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     overflow: hidden;
     font-family: 'Simpsons', sans-serif;
@@ -96,6 +100,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    text-decoration: underline;
+    color:rgb(229, 217, 0)
 }
 
 .options:hover {
@@ -111,23 +117,13 @@ button:hover {
     margin: 15px;
 }
 
+
+
 #next-btn {
     bottom: 20px;
     right: 20px;
 }
 
-#restart-btn {
-    position: fixed;
-    cursor: pointer;
-    box-shadow: 0px 0px 0px 4px rgb(5, 139, 5);
-    border: 3px solid white;
-    border-radius: 8px;
-    padding: 10px 52px;    
-    font-size: 19px;
-    background: rgb(5, 139, 5);
-    color: white;
-    font-family: 'Simpsons', sans-serif;
-}
 
 .feedback {
     color: rgb(229, 217, 0);
@@ -136,12 +132,15 @@ button:hover {
 }
 
 .score {
-    position: absolute; /* Position the score relative to .game-container */
-    top: 150px; /* Distance from the top of .game-container */
-    right: 400px; /* Distance from the right of .game-container */
-    color: rgb(229, 217, 0); /* Retain existing color */
-    font-size: 30px; 
-    font-family: 'Simpsons', sans-serif; 
+    position: absolute;
+    top: 180px;
+    right: 450px;
+    color: rgb(229, 217, 0);
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Simpsons', sans-serif;
+    max-width: 90%; /* Ensure it doesn't overflow on smaller screens */
+    box-sizing: border-box;
 }
 
 .timer {
@@ -153,3 +152,41 @@ button:hover {
 #timer-count {
     color: rgb(229, 217, 0);
 }
+
+#end-container{
+    display: grid;
+    height: 600px;
+    width: 600px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+    justify-items: center;
+    align-items: center;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    }
+    
+    .end-message { 
+        grid-area: 1 / 1 / 2 / 2;
+        color:rgb(229, 217, 0);
+        font-size: 50px;
+    
+    }
+    .final-score { 
+        grid-area: 2 / 1 / 3 / 2; 
+        color:rgb(229, 217, 0);
+        font-size: 50px;
+    }
+
+    #restart-btn {
+        grid-area: 3 / 1 / 4 / 2;
+        padding: 10px 20px;
+        font-size: 28px;
+        cursor: pointer;
+        background-color: rgb(5, 139, 5);
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
