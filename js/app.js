@@ -85,6 +85,7 @@ class QuizGame {
 
         this.root.innerHTML = `
             <div class="game-container">
+                <div class="score">Score: ${this.score}</div>
                 <div class="question">${currentQuestion.question}</div>
                 <div class="timer">Time left: <span id="timer-count">${remainingTime}</span> </div>
                 <div class="options">
@@ -95,7 +96,7 @@ class QuizGame {
                         .join("")}
                 </div>
                 <div class="feedback"></div>
-                <div class="score">Score: ${this.score}</div>
+                
             </div>
         `;
         
