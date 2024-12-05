@@ -1,7 +1,8 @@
 export default class BartSounds {
-    constructor() {
+    constructor(volume = 0.2) {
         this.winSounds = [];
         this.loseSounds = [];
+        this.volume = volume;
         this.loadSounds();
     }
 
@@ -26,6 +27,7 @@ export default class BartSounds {
     playRandomSounds(soundArray) {
         const randomIndex = Math.floor(Math.random() * soundArray.length);
         const audio = new Audio(soundArray[randomIndex]);
+        audio.volume = this.volume;
         audio.play();
     }
 
