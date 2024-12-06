@@ -1,6 +1,6 @@
 export default class FullscreenHandler {
     constructor() {
-        this.isPhone = this.checkIfPhone(); // Detect if the device is a phone
+        this.isPhone = this.checkIfPhone(); 
         this.isLandscape = false;
         this.fullscreenButton = null;
         this.startGameButton = null;
@@ -14,10 +14,12 @@ export default class FullscreenHandler {
         }
     }
 
+
+    // values for what screens to handle as "phones"
     checkIfPhone() {
         const width = window.innerWidth;
         const height = window.innerHeight;
-        return width <= 853 && height <= 1280; // Adjust resolution threshold as needed
+        return width <= 853 && height <= 1280; 
     }
 
     renderRotateMessage() {
@@ -29,7 +31,7 @@ export default class FullscreenHandler {
 
     attachOrientationListener() {
         window.addEventListener("resize", () => this.handleOrientationChange());
-        this.handleOrientationChange(); // Initial orientation handling
+        this.handleOrientationChange(); 
     }
 
     handleOrientationChange() {
@@ -42,7 +44,7 @@ export default class FullscreenHandler {
             this.isLandscape = true;
             rotateMessage?.remove();
 
-            // Only render the fullscreen button if not in fullscreen
+            //only render if not in fullscreen
             if (!document.fullscreenElement) {
                 this.renderFullscreenButton();
             }
@@ -52,12 +54,12 @@ export default class FullscreenHandler {
             this.isLandscape = false;
 
             if (this.fullscreenButton) {
-                this.fullscreenButton.style.display = "none"; // Hide the fullscreen button in portrait mode
+                this.fullscreenButton.style.display = "none"; 
             }
             this.renderStartGameButton(false);
 
             if (!rotateMessage) {
-                this.renderRotateMessage(); // Show the rotate message
+                this.renderRotateMessage();
             }
         }
     }
@@ -66,13 +68,27 @@ export default class FullscreenHandler {
         if (!this.fullscreenButton) {
             this.fullscreenButton = document.createElement("button");
             this.fullscreenButton.id = "fullscreen-btn";
-            this.fullscreenButton.textContent = "Go Fullscreen";
+            this.fullscreenButton.innerHTML = `
+            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg height="32px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" 
+                 xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Layer_1"/>
+                <g id="fullscreen_x5F_alt">
+                    <g>
+                        <polygon points="29.414,26.586 22.828,20 20,22.828 26.586,29.414 24,32 32,32 32,24" style="fill:#FFFFFF;"/>
+                        <polygon points="2.586,5.414 9.172,12 12,9.172 5.414,2.586 8,0 0,0 0,8" style="fill:#FFFFFF;"/>
+                        <polygon points="26.586,2.586 20,9.172 22.828,12 29.414,5.414 32,8 32,0 24,0" style="fill:#FFFFFF;"/>
+                        <polygon points="12,22.828 9.172,20 2.586,26.586 0,24 0,32 8,32 5.414,29.414" style="fill:#FFFFFF;"/>
+                    </g>
+                </g>
+            </svg>
+        `;
             document.body.appendChild(this.fullscreenButton);
 
             this.fullscreenButton.addEventListener("click", () => this.enterFullscreen());
         }
 
-        this.fullscreenButton.style.display = "block"; // Ensure the button is visible
+        this.fullscreenButton.style.display = "block"; 
     }
 
     renderStartGameButton(show) {
@@ -86,6 +102,8 @@ export default class FullscreenHandler {
 
         this.startGameButton.style.display = show ? "block" : "none";
     }
+
+
 
     enterFullscreen() {
         const docElement = document.documentElement;
@@ -106,7 +124,21 @@ export default class FullscreenHandler {
     renderExitFullscreenButton() {
         const exitFullscreenButton = document.createElement("button");
         exitFullscreenButton.id = "exit-fullscreen-btn";
-        exitFullscreenButton.textContent = "Exit Fullscreen";
+        exitFullscreenButton.innerHTML = `
+        <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+        <svg height="32px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" 
+             xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Layer_1"/>
+            <g id="fullscreen_x5F_exit_x5F_alt">
+                <g>
+                    <polygon points="22.586,25.414 29.172,32 32,29.172 25.414,22.586 28,20 20,20 20,28" style="fill:#FFFFFF;"/>
+                    <polygon points="6.547,9.371 4,12 11.961,11.957 12,4 9.375,6.543 2.828,0 0,2.828" style="fill:#FFFFFF;"/>
+                    <polygon points="0,29.172 2.828,32 9.414,25.414 12,28 12,20 4,20 6.586,22.586" style="fill:#FFFFFF;"/>
+                    <polygon points="28.031,12 25.438,9.404 32,2.838 29.164,0 22.598,6.566 20,3.971 20,12" style="fill:#FFFFFF;"/>
+                </g>
+            </g>
+        </svg>
+    `;
         document.body.appendChild(exitFullscreenButton);
 
         exitFullscreenButton.addEventListener("click", () => this.exitFullscreen(exitFullscreenButton));

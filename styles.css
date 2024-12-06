@@ -174,73 +174,67 @@ button:hover {
     transform: translate(-50%, -50%);
     }
     
-    .end-message { 
-        grid-area: 1 / 1 / 2 / 2;
-        color:rgb(229, 217, 0);
-        font-size: 50px;
+.end-message { 
+    grid-area: 1 / 1 / 2 / 2;
+    color:rgb(229, 217, 0);
+    font-size: 50px;
     
-    }
-    .final-score { 
-        grid-area: 2 / 1 / 3 / 2; 
-        color:rgb(229, 217, 0);
-        font-size: 50px;
-    }
+}
+.final-score { 
+    grid-area: 2 / 1 / 3 / 2; 
+       color:rgb(229, 217, 0);
+    font-size: 50px;
+}
 
-    .bart-message {
-        color: rgb(229, 217, 0);
-    }
+.bart-message {
+    color: rgb(229, 217, 0);
+}
 
-    #restart-btn {
-        grid-area: 3 / 1 / 4 / 2;
-        padding: 10px 20px;
-        font-size: 28px;
-        cursor: pointer;
-        background-color: rgb(5, 139, 5);
-        color: white;
-        border: 2px solid white;
-        border-radius: 5px;
-    }
+#restart-btn {
+    grid-area: 3 / 1 / 4 / 2;
+    padding: 10px 20px;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: rgb(5, 139, 5);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
 
 
 
-    #fullscreen-btn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-       
-        z-index: 100;
-    }
+#fullscreen-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    font-size: 0px;
+    z-index: 100;
+}
     
-    #fullscreen-btn:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-    }
 
-    #exit-fullscreen-btn {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        z-index: 100;
-    }
+#exit-fullscreen-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    font-size: 0px;
+    z-index: 100;
+}
     
-    #rotate-message {
-        position: fixed;
-        animation: fadeInOut 5s ease-in-out;
-        top: 5%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        padding: 10px 20px;
-        font-size: 18px;
-        color: white;
-        background: rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
-        z-index: 101;
-        
-    }
+#rotate-message {
+    position: fixed;
+    animation: fadeInOut 5s ease-in-out;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    z-index: 101;     
+}
     
     @keyframes fadeInOut {
         0% { opacity: 0; }
