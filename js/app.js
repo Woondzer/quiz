@@ -202,7 +202,7 @@ class QuizGame {
             this.root.innerHTML =     
             `<div id="end-container">
                 <div class="bart-message">Bart: "You didn't lose, you just got an honorary degree in failure!"</div>
-                <div class="end-message">You lose!</div>
+                <div class="end-message">really? Go again.</div>
                 <div class="final-score">Your final score: ${this.score}</div>
                 <button id="restart-btn">Restart Game</button>
             </div>`
