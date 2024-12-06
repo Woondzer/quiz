@@ -78,7 +78,7 @@ button:hover {
 #skip-btn {
     position: fixed;
     z-index: 20;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
     padding: 10px 52px;  
     font-size: 19px;
@@ -200,3 +200,56 @@ button:hover {
         border: 2px solid white;
         border-radius: 5px;
     }
+
+
+
+    #fullscreen-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+       
+        z-index: 100;
+    }
+    
+    #fullscreen-btn:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    #exit-fullscreen-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        z-index: 100;
+    }
+    
+    #rotate-message {
+        position: fixed;
+        animation: fadeInOut 5s ease-in-out;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        z-index: 101;
+        
+    }
+    
+    @keyframes fadeInOut {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    
+
+
+
+

@@ -1,10 +1,13 @@
 import BartSounds from "./bartSounds.js";
+import FullscreenHandler from "./fullscreen.js";
 
 fetch('quiz.json')
     .then((response) => response.json())
     .then((data) => {
-        const bartSounds = new BartSounds()
+        const bartSounds = new BartSounds();
         new QuizGame(data, bartSounds)
+        new FullscreenHandler();
+        
     });
 
 
@@ -25,7 +28,7 @@ class QuizGame {
 
     renderStartPage() {
         this.root.innerHTML = `
-            <button id="start-btn">Start Game</button>
+            <button id="start-btn" style="display: none;">Start Game</button>
         `;
         document.getElementById("start-btn").addEventListener("click", () => this.startVideoTransition()); //this.startGame()
     }
