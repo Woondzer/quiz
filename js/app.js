@@ -181,13 +181,33 @@ class QuizGame {
     }
 
     renderEndPage() {
-        this.root.innerHTML = `
-            <div id="end-container">
-                <div class="end-message">Game Over!</div>
+        
+        if(this.score === 10) {
+            this.root.innerHTML =     
+                `<div id="end-container">
+                    <div class="bart-message">Bart: "Man, you're so sharp, you could cut glass with your brain!"</div>
+                    <div class="end-message">You Win!</div>
+                    <div class="final-score">Your final score: ${this.score}</div>
+                    <button id="restart-btn">Restart Game</button>
+                </div>`
+        }else if (this.score <= 9) {
+            this.root.innerHTML =     
+            `<div id="end-container">
+                <div class="bart-message">Bart: "I haven't seen a fall that bad since Milhouse tripped over his own feet!"</div>
+                <div class="end-message">You lose!</div>
                 <div class="final-score">Your final score: ${this.score}</div>
                 <button id="restart-btn">Restart Game</button>
-            </div>
-        `;
+            </div>`
+        }else if (this.score <= 3) {
+            this.root.innerHTML =     
+            `<div id="end-container">
+                <div class="bart-message">Bart: "You didn't lose, you just got an honorary degree in failure!"</div>
+                <div class="end-message">You lose!</div>
+                <div class="final-score">Your final score: ${this.score}</div>
+                <button id="restart-btn">Restart Game</button>
+            </div>`
+        }
+        ;
         document.getElementById("restart-btn").addEventListener("click", () => this.startGame());
     }
 }
