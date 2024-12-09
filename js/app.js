@@ -23,7 +23,14 @@ class QuizGame {
     }
 
     init() {
-        this.renderStartPage();
+        // this.renderStartPage();
+        const skipIntro = sessionStorage.getItem('skipIntro');
+        if (skipIntro === 'true') {
+            sessionStorage.removeItem('skipIntro');
+            this.startShortIntro();
+        } else {
+            this.renderStartPage();
+        }
     }
 
     renderStartPage() {
@@ -33,38 +40,39 @@ class QuizGame {
         document.getElementById("start-btn").addEventListener("click", () => this.startVideoTransition()); //this.startGame()
     }
 
-    startVideoTransition() {
-        this.root.innerHTML = "";
-        const intro = document.createElement("video");
-        intro.src = "./movie/simpsonNEW.mp4";
-        intro.classList.add("intro-background");
-        intro.autoplay = true;
-        intro.muted = false;
-        intro.playsInline = true;
+startVideoTransition() {
+    this.root.innerHTML = "";
+    const intro = document.createElement("video");
+    intro.src = "./movie/simpsonNEW.mp4";
+    intro.classList.add("intro-background");
+    intro.autoplay = true;
+    intro.muted = false;
+    intro.playsInline = true;
 
-        document.body.appendChild(intro)
+    document.body.appendChild(intro);
 
-        setTimeout(() => {
-            intro.classList.add("fade-in");
-        }, 100);
+    setTimeout(() => {
+        intro.classList.add("fade-in");
+    }, 100);
 
-        const skipButton = document.createElement("button");
-        skipButton.textContent = "Skip";
-        skipButton.id = "skip-btn";
+    const skipButton = document.createElement("button");
+    skipButton.textContent = "Skip";
+    skipButton.id = "skip-btn";
 
-        document.body.appendChild(skipButton);
+    document.body.appendChild(skipButton);
 
-        skipButton.addEventListener("click", () => {
-            intro.src = "./movie/simpsonNEWshortVersion.mp4";
-            intro.play();
-            skipButton.remove();
-        });
+    skipButton.addEventListener("click", () => {
+        intro.src = "./movie/simpsonNEWshortVersion.mp4";
+        intro.play();
+        skipButton.remove();
+    });
 
-        intro.addEventListener("ended", () => {
-            this.startGame();
-            skipButton.remove();
-        });
-    }
+    intro.addEventListener("ended", () => {
+        this.startGame();
+        skipButton.remove();
+    });
+}
+
 
     startGame() {
         this.currentQuestionIndex = 0;
@@ -94,7 +102,11 @@ class QuizGame {
 
         this.root.innerHTML = `
             <div class="game-container">
-                <div class="score">Score: ${this.score}</div>
+                <div class="score">
+                <button id="restart-currBtn">Restart</button> 
+                Score: ${this.score}
+                </div>
+
                 <div class="question">${currentQuestion.question}</div>
                 <div class="timer">Time left: <span id="timer-count">${remainingTime}</span> </div>
                 <div class="options">
@@ -109,6 +121,12 @@ class QuizGame {
             </div>
         `;
         
+        document.getElementById("restart-currBtn").addEventListener("click", () => {
+            sessionStorage.setItem('skipIntro', 'true');
+            location.reload();
+        });
+
+        
         this.timer = setInterval(() => {
             remainingTime--;
             document.getElementById('timer-count').textContent = remainingTime;
@@ -118,8 +136,26 @@ class QuizGame {
                 this.handleAnswer(null, currentQuestion.answer); 
             }
         }, 1000);
-
         this.addOptionListeners(currentQuestion);
+    }
+
+    startShortIntro() {
+        const intro = document.createElement("video");
+        intro.src = "./movie/simpsonNEWshortVersion.mp4";
+        intro.classList.add("intro-background");
+        intro.autoplay = true;
+        intro.mute = false;
+        intro.playInLine = true;
+
+        document.body.appendChild(intro);
+
+        intro.addEventListener("ended", () => {
+            this.startGame();
+        });
+
+        setTimeout(() => {
+            intro.classList.add("fade-in");
+        }, 100);
     }
 
     addOptionListeners(question) {
@@ -160,6 +196,7 @@ class QuizGame {
         optionsDiv.querySelectorAll('.option-btn').forEach(btn => btn.disabled = true);
     }
 
+
     renderNextButton() {
         const feedbackDiv = document.querySelector('.feedback');
         const nextButton = document.createElement('button');
@@ -185,36 +222,36 @@ class QuizGame {
 
     renderEndPage() {
         
-        if(this.score === 10) {
+        if (this.score === 10) {
             this.root.innerHTML =     
                 `<div id="end-container">
                     <div class="bart-message">Bart: "Man, you're so sharp, you could cut glass with your brain!"</div>
                     <div class="end-message">You Win!</div>
                     <div class="final-score">Your final score: ${this.score}</div>
                     <button id="restart-btn">Restart Game</button>
-                </div>`
-        }else if (this.score <= 9) {
+                </div>`;
+        } else if (this.score <= 3) { 
             this.root.innerHTML =     
-            `<div id="end-container">
-                <div class="bart-message">Bart: "I haven't seen a fall that bad since Milhouse tripped over his own feet!"</div>
-                <div class="end-message">You lose!</div>
-                <div class="final-score">Your final score: ${this.score}</div>
-                <button id="restart-btn">Restart Game</button>
-            </div>`
-        }else if (this.score <= 3) {
+                `<div id="end-container">
+                    <div class="bart-message">Bart: "You didn't lose, you just got an honorary degree in failure!"</div>
+                    <div class="end-message">really? Go again.</div>
+                    <div class="final-score">Your final score: ${this.score}</div>
+                    <button id="restart-btn">Restart Game</button>
+                </div>`;
+        } else if (this.score <= 9) { 
             this.root.innerHTML =     
-            `<div id="end-container">
-                <div class="bart-message">Bart: "You didn't lose, you just got an honorary degree in failure!"</div>
-                <div class="end-message">really? Go again.</div>
-                <div class="final-score">Your final score: ${this.score}</div>
-                <button id="restart-btn">Restart Game</button>
-            </div>`
+                `<div id="end-container">
+                    <div class="bart-message">Bart: "I haven't seen a fall that bad since Milhouse tripped over his own feet!"</div>
+                    <div class="end-message">You lose!</div>
+                    <div class="final-score">Your final score: ${this.score}</div>
+                    <button id="restart-btn">Restart Game</button>
+                </div>`;
         }
-        ;
-        document.getElementById("restart-btn").addEventListener("click", () => this.startGame());
+        
+        document.getElementById("restart-btn").addEventListener("click", () => {
+            sessionStorage.setItem('skipIntro', 'true');
+            location.reload();
+        });
     }
 }
 
-// fetch('quiz.json')
-//     .then((response) => response.json())
-//     .then((data) => new QuizGame(data));
