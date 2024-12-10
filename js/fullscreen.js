@@ -25,7 +25,7 @@ export default class FullscreenHandler {
     renderRotateMessage() {
         const rotateMessage = document.createElement("div");
         rotateMessage.id = "rotate-message";
-        rotateMessage.textContent = "Please rotate your phone for the best experience";
+        rotateMessage.textContent = "Please rotate your phone to start the game!";
         document.body.appendChild(rotateMessage);
     }
 
@@ -155,7 +155,7 @@ export default class FullscreenHandler {
 
         button.remove();
 
-        // Restore the fullscreen button based on the current orientation and fullscreen state
+        // Restore the fullscreen button
         if (this.isLandscape && this.isPhone && !document.fullscreenElement) {
             this.renderFullscreenButton();
         }
@@ -164,12 +164,10 @@ export default class FullscreenHandler {
     addFullscreenChangeListener() {
         document.addEventListener("fullscreenchange", () => {
             if (document.fullscreenElement) {
-                // Hide the fullscreen button while in fullscreen
                 if (this.fullscreenButton) {
                     this.fullscreenButton.style.display = "none";
                 }
             } else if (this.isPhone && this.isLandscape) {
-                // Re-render the fullscreen button when exiting fullscreen in landscape mode
                 if (!this.fullscreenButton) {
                     this.renderFullscreenButton();
                 } else {

@@ -1,4 +1,4 @@
-@media (max-width: 2560px) {
+/* @media (max-width: 2560px) {
     /* .score {
         top: 200px; 
         right: 440px; 
@@ -6,13 +6,13 @@
         padding: 5px; 
     } */
 
-    .game-container {
-        gap: 90px;
-        margin-bottom: 30px;
-    }
-}
+    /* .game-container {
+        gap: 5.62rem;
+        margin-bottom: 1.87rem
+    } */
+/* } */
 
-@media (max-width: 1920px) {
+/* @media (max-width: 1920px) {
     .score {
         top: 200px; 
         right: 380px; 
@@ -27,7 +27,7 @@
     .feedback {
         margin-top: 100px;
     }
-}
+} */ 
 
 /* iPad Pro */
 @media (max-width: 1380px) {
@@ -38,48 +38,47 @@
 
     .game-container {
         width: 100%;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .score { 
-        margin: 0 0 50px 0;
-        font-size: 30px;
-        height: 55px;
+        margin: 0 0 3.12rem 0;
+        font-size: 1.87rem;
+        height: 3.43rem;
     }
 
     .question {
         width: 80%;
-        margin-top: 40px;
-        font-size: 30px;
+        margin-top: 2.5rem;
+        font-size: 1.87rem;
     }
 
     .timer {
-        font-size: 20;
-        margin: 20px 0 50px 0;
+        font-size: 1.25rem;
+        margin: 1.25rem 0 3.12rem 0;
     }
 
     .options {
-        gap: 55px;
+        gap: 3.43rem;
     }
 
     .option-btn {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     .feedback {
-        margin-top: 50px;
-        font-size: 26px;
+        margin-top: 3.1rem;
+        font-size: 1.6rem;
     }
 
-    #end-container{
-        height: 500px;
-        width: 700px;
-        gap: 0px; 
-
+    #end-container {
+        height: 31.25rem;
+        width: 43.75rem;
+        gap: 0;
     }
 }
 
-/* Surface Pro 7*/
+/* Surface Pro 7 */
 @media (max-width: 1368px) {
 
     #root {
@@ -88,44 +87,47 @@
 
     .game-container {
         width: 100%;
-        gap: 10px;
+        gap: 0.625rem;
     }
 
     .score { 
-        margin: 0 0 40px 0;
-        font-size: 30px;
-        height: 55px;
+        margin: 0 0 2.5rem 0;
+        font-size: 1.87rem;
+        height: 3.43rem;
     }
 
     .question {
         width: 80%;
-        margin-top: 40px;
-        font-size: 30px;
+        margin-top: 2.5rem;
+        font-size: 1.87rem;
     }
 
     .timer {
-        font-size: 20;
-        margin: 20px 0 50px 0;
+        font-size: 1.25rem;
+        margin: 1.25rem 0 3rem 0;
     }
 
     .options {
-        gap: 55px;
+        gap: 3.4rem;
     }
 
     .option-btn {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     .feedback {
-        margin-top: 50px;
-        font-size: 26px;
+        margin-top: 3rem;
+        font-size: 1.6rem;
     }
 
-    #end-container{
-        height: 500px;
-        width: 700px;
-        gap: 0px; 
+    #end-container {
+        height: 31.25rem;
+        width: 43.75rem;
+        gap: 0;
+    }
 
+    .bart-message {
+        font-size: 1.5rem;
     }
 }
 
@@ -135,18 +137,27 @@
     #root {
         width: 85%;
     }
+    
+    .score {
+        margin-bottom: 0;
+    }
 
     .timer {
-        font-size: 17;
-        margin: 10px 0 30px 0;
+        font-size: 1rem;
+        margin: 0.6rem 0 1.8rem 0;
     }
 
     .option-btn {
-        font-size: 25px;
+        font-size: 1.56rem;
+    }
+
+    #skip-btn {
+        padding: 0.7rem 2rem 0.7rem 2rem;
+        right: 4rem;
     }
 }
 
-/* iPad Air  */
+/* iPad Air */
 @media (max-width: 1200px) {
 
     #root {
@@ -158,50 +169,48 @@
     }
 
     .score { 
-        margin: 0 0 35px 0;
-        font-size: 27px;
-        height: 45px;
+        margin: 0 0 0 0;
+        font-size: 1.68rem;
+        height: 3.5rem;
     }
 
     .question {
-        margin-top: 40px;
-        font-size: 27px;
+        margin-top: 2.5rem;
+        font-size: 1.68rem;
     }
 
     .timer {
-        font-size: 17;
-        margin: 10px 0 30px 0;
+        font-size: 1rem;
+        margin: 0.6rem 0 1.8rem 0;
     }
 
     .option-btn {
-        font-size: 25px;
+        font-size: 1.56rem;
     }
 
     .feedback {
-        margin-top: 50px;
-        font-size: 25px;
+        margin-top: 3rem;
+        font-size: 1.5rem;
     }
 
-    #end-container{
-        height: 500px;
-        width: 700px;
-        gap: 0px; 
-
+    #end-container {
+        height: 31.25rem;
+        width: 43.75rem;
+        gap: 0;
     }
 }
 
-
-/* iPad Mini  */
-@media (max-width: 1024px){
+/* iPad Mini */
+@media (max-width: 1024px) {
 
     #root {
         width: 100%;
     }
-    
+
     .score { 
-        margin-top: 0px;
-        font-size: 27px;
-        height: 45px;
+        margin: 0;
+        font-size: 1.68rem;
+        height: 3.5rem;
     }
 
     .game-container {
@@ -209,585 +218,650 @@
     }
 
     .question {
-        margin-top: 40px;
-        font-size: 27px;
+        margin-top: 2.5rem;
+        font-size: 1.68rem;
     }
 
     .timer {
-        font-size: 17;
-        margin: 10px 0 30px 0;
+        font-size: 1rem;
+        margin: 0.62rem 0 1.87rem 0;
     }
 
     .option-btn {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
 
     .feedback {
-        margin-top: 50px;
-        font-size: 25px;
+        margin-top: 3.1rem;
+        font-size: 1.56rem;
     }
 
-    #end-container{
-        height: 500px;
-        width: 700px;
-        gap: 0px; 
-
+    #end-container {
+        height: 31.25rem;
+        width: 43.75rem;
+        gap: 0;
     }
 
     #start-btn {
-        bottom: 100px;
-        left: 230px;
+        bottom: 6.25rem;
+        left: 14.375rem;
+    }
+
+    #fullscreen-btn {
+        bottom: 2.5rem;
+        right: 2.5rem;
+    }
+
+    #exit-fullscreen-btn {
+        bottom: 2.5rem;
+        right: 2.5rem;
     }
 }
 
-/* Iphone 14 Pro Max  */
+/* iPhone 14 Pro Max */
 @media (max-width: 950px) {
 
     #start-btn {
-
-        bottom: 20px;
-        left: 108px;
+        bottom: 1.25rem;
+        left: 7.9rem;
     }
 
     #skip-btn {
-        padding: 10px 20px;  
+        padding: 0.625rem 1.25rem;
     }
 
-    .score { 
-        font-size: 20px;
-        height: 45px;
-        margin: 0px 0px 0px 20px;
+    .score {
+        font-size: 1.2rem;
+        height: 3rem;
+        margin: 0 0 0 1.3rem;
     }
-
 
     #restart-currBtn {
-        font-size: 12px;
-        
+        font-size: 0.7rem;
     }
 
     .game-container {
-        font-size: 15px;
-        margin-bottom: 20px;
-        gap: 12px;
+        width: 80%;
+        margin-bottom: 1.2rem;
+        gap: 0.8rem;
     }
 
     .question {
-        font-size: 20px;
-        margin-top: 20px;
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
     }
 
     .timer {
-        margin: 20px;
-        font-size: 10px;
+        margin: 1.25rem;
+        font-size: 0.65rem;
     }
 
     .options {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .option-btn {
-        font-size: 20px;
-        margin: 0px;
+        font-size: 1.25rem;
+        margin: 0;
     }
 
     .feedback {
-        font-size: 17px;
-        margin-top: 20px;
+        font-size: 0.9rem;
+        margin-top: 1.25rem;
     }
 
     #next-btn {
-        padding: 4px 8px;
-        border-radius: 5px;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.3rem;
     }
 
-    #end-container{
+    #end-container {
         height: 100%;
         width: 100%;
-        gap: 0px; 
-
+        gap: 0;
     }
 
-    .end-message { 
-        font-size: 35px;
-        margin-top: 95px;
+    .end-message {
+        font-size: 2.19rem;
+        margin-top: 5.93rem;
     }
 
-    .final-score { 
-        font-size: 20px;
-        margin-top: 45px;
+    .final-score {
+        font-size: 1.25rem;
+        margin-top: 2.8rem;
     }
 
     #restart-btn {
-        padding: 5px 10px;
-        font-size: 15px;
-        margin-top: 40px;
+        font-size: 0.95rem;
+        margin-top: 2.5rem;
     }
 
     .bart-message {
-        font-size: 15px;
-        margin-bottom: 40px;
+        font-size: 0.95rem;
+        margin-bottom: 2.5rem;
     }
 }
 
+
+/* Pixel 7 */
+@media (max-width: 915px) {
+    #fullscreen-btn {
+        right: 1.25rem;
+    }
+
+    #exit-fullscreen-btn {
+        right: 1.25rem;
+    }
+}
 
 /* Samsung Galaxy A51/71 */
 @media (max-width: 914px) {
 
     #root {
-        width: 80%;
+        width: 100%;
     }
 
-    .score { 
-        font-size: 15px;
-        height: 40px;
+    .score {
+        font-size: 0.93rem;
+        height: 3rem;
     }
 
     #restart-currBtn {
-        font-size: 15px;
-        margin-left: 13px;
+        font-size: 0.93rem;
+        margin-left: 0.81rem;
     }
 
     .game-container {
-        font-size: 15px;
-
+        font-size: 0.93rem;
     }
 
     .question {
-        margin-top: 0px;
-        font-size: 20px;
+        margin-top: 0;
+        font-size: 1.25rem;
     }
 
     .timer {
-        margin: 10px 0 30px 0;
-        font-size: 10px;
+        margin: 0.62rem 0 1.87rem 0;
+        font-size: 0.62rem;
     }
 
     .options {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .option-btn {
-        font-size: 20px;
-        margin: 0px;
+        font-size: 1.25rem;
+        margin: 0;
     }
 
     .feedback {
-        font-size: 15px;
-        margin-top: 20px;
+        font-size: 0.93rem;
+        margin-top: 1.25rem;
     }
 
     #next-btn {
-        font-size: 10px;
-        padding: 7px;
+        font-size: 0.62rem;
+        padding: 0.43rem;
     }
 
-    #end-container{
+    #end-container {
         height: 100%;
         width: 100%;
-        gap: 0px; 
-
+        gap: 0;
     }
 
-    .end-message { 
-        font-size: 35px;
-        margin-top: 65px;
+    .end-message {
+        font-size: 2.1rem;
+        margin-top: 4rem;
     }
 
-    .final-score { 
-        font-size: 20px;
-        margin-top: 45px;
+    .final-score {
+        font-size: 1.25rem;
+        margin-top: 2.81rem;
     }
 
     #restart-btn {
-        padding: 5px 10px;
-        font-size: 15px;
-        margin-top: 40px;
+        padding: 0.31rem 0.62rem;
+        font-size: 0.93rem;
+        margin-top: 2.81rem;
     }
 
     .bart-message {
-        font-size: 15px;
-        margin-bottom: 40px;
+        font-size: 0.93rem;
+        margin-bottom: 2.81rem;
     }
 
+    #fullscreen-btn {
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }   
+    #exit-fullscreen-btn {
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }
 }
+
 
 /* iPhone XR */
 @media (max-width: 896px) {
 
-    .score { 
-        font-size: 20px;
-        height: 45px;
+    .score {
+        font-size: 1.25rem;
+        height: 2.8rem;
     }
 
     .game-container {
-        font-size: 15px;
+        width: 100%;
+        font-size: 0.9rem;
     }
 
     .question {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .timer {
-        margin: 20px;
-        font-size: 10px;
+        margin: 1.25rem;
+        font-size: 0.62rem;
     }
 
     .options {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .option-btn {
-        font-size: 20px;
-        margin: 0px;
+        font-size: 1.20rem;
+        margin: 0;
     }
 
     .feedback {
-        font-size: 17px;
-        margin-top: 20px;
+        font-size: 0.85rem;
+        margin-top: 1.25rem;
     }
 
-    #end-container{
+    #end-container {
         height: 100%;
         width: 100%;
-        gap: 0px; 
-
+        gap: 0;
     }
 
-    .end-message { 
-        font-size: 35px;
-        margin-top: 65px;
+    .end-message {
+        font-size: 2rem;
+        margin-top: 4rem;
     }
 
-    .final-score { 
-        font-size: 20px;
-        margin-top: 45px;
+    .final-score {
+        font-size: 1.25rem;
+        margin-top: 2.8rem;
     }
 
     #restart-btn {
-        padding: 5px 10px;
-        font-size: 15px;
-        margin-top: 40px;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.93rem;
+        margin-top: 2.8rem;
     }
 
     .bart-message {
-        font-size: 15px;
-        margin-bottom: 40px;
+        font-size: 0.93rem;
+        margin-bottom: 2.81rem;
     }
-
 }
 
-
-/* Galaxy Z fold 5 */
+/* Galaxy Z Fold 5 */
 @media (max-width: 882px) {
 
     #root {
         width: 80%;
     }
 
-    .score { 
-        font-size: 15px;
-        height: 35px;
+    #start-btn {
+
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+        left: 10rem;
+        bottom: 0.5rem;
+    }
+
+    .score {
+        font-size: 0.9rem;
+        height: 3rem;
     }
 
     .game-container {
-        font-size: 15px;
+        font-size: 0.9rem;
         gap: 0;
     }
 
     .question {
-        font-size: 15px;
-        margin: 20px 0 20px 0;
+        font-size: 0.9rem;
+        margin: 1.25rem 0 1.25rem 0;
     }
 
     .timer {
-        margin: 20px;
-        font-size: 10px;
+        margin: 1.25rem;
+        font-size: 0.62rem;
     }
 
     .options {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .option-btn {
-        font-size: 15px;
-        margin: 0px;
+        font-size: 0.9rem;
+        margin: 0;
     }
 
     .feedback {
-        font-size: 17px;
-        margin-top: 30px;
-        
+        font-size: 1rem;
+        margin-top: 1.87rem;
     }
 
-    #end-container{
+    #end-container {
         height: 100%;
         width: 100%;
-        gap: 0px; 
-
+        gap: 0;
     }
 
-    .end-message { 
-        font-size: 35px;
-        margin-top: 65px;
+    .end-message {
+        font-size: 2rem;
+        margin-top: 4rem;
     }
 
-    .final-score { 
-        font-size: 20px;
-        margin-top: 45px;
+    .final-score {
+        font-size: 1.25rem;
+        margin-top: 2.8rem;
     }
 
     #restart-btn {
-        padding: 5px 10px;
-        font-size: 15px;
-        margin-top: 40px;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.9rem;
+        margin-top: 2.8rem;
     }
 
     .bart-message {
-        font-size: 15px;
-        margin-bottom: 40px;
+        font-size: 0.9rem;
+        margin-bottom: 2.8rem;
     }
 
+    #fullscreen-btn {
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }
+
+    #exit-fullscreen-btn {
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }
 }
 
-
-/* Iphone 12 pro */
+/* iPhone 12 Pro */
 @media (max-width: 850px) {
 
-    .score { 
-        font-size: 20px;
-        height: 35px;
-        margin-bottom: 23px;
+    .score {
+        font-size: 1.25rem;
+        height: 2.8rem;
+        margin-bottom: 0rem;
     }
 
     .game-container {
-        font-size: 15px;
-        gap: 2px;
+        font-size: 0.9375rem;
+        gap: 0.125rem;
     }
 
     .question {
-        font-size: 20px;
-
+        font-size: 1.25rem;
     }
 
     .timer {
-        margin: 20px;
-        font-size: 10px;
+        margin: 1.25rem;
+        font-size: 0.625rem;
     }
 
     .options {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .option-btn {
-        font-size: 20px;
-        margin: 0px;
+        font-size: 1.25rem;
+        margin: 0;
     }
 
     .feedback {
-        font-size: 17px;
-        margin-top: 20px;
+        font-size: 1.0625rem;
+        margin-top: 1.25rem;
     }
 
     #next-btn {
-        padding: 5px 10px;
+        padding: 0.3125rem 0.625rem;
     }
 
-    #end-container{
+    #end-container {
         height: 100%;
         width: 100%;
-        gap: 0px; 
-
+        gap: 0;
     }
 
-    .end-message { 
-        font-size: 35px;
-        margin-top: 65px;
+    .end-message {
+        font-size: 2.1875rem;
+        margin-top: 4.0625rem;
     }
 
-    .final-score { 
-        font-size: 20px;
-        margin-top: 45px;
+    .final-score {
+        font-size: 1.25rem;
+        margin-top: 2.8125rem;
     }
 
     #restart-btn {
-        padding: 5px 10px;
-        font-size: 15px;
-        margin-top: 40px;
+        padding: 0.3125rem 0.625rem;
+        font-size: 0.9375rem;
+        margin-top: 2.8125rem;
     }
 
     .bart-message {
-        font-size: 15px;
-        margin-bottom: 40px;
+        font-size: 0.9375rem;
+        margin-bottom: 2.8125rem;
     }
 }
 
-/* Samsung Galaxy s24 Ultra */
+/* Samsung Galaxy S8 */
 @media (max-width: 750px) {
 
-}
+    #start-btn {
+        bottom: 1.25rem;
+        left: 5rem;
+    }
 
-/* samsung galaxy S8 */
-@media (max-width: 750px) {
-
-    .score { 
-        margin-top: 0px;
-        font-size: 14px;
-        height: 35px;
+    .score {
+        margin-top: 0;
+        font-size: 0.87rem;
+        height: 2.7rem;
     }
 
     #restart-currBtn {
-        font-size: 14px;
+        font-size: 0.87rem;
     }
 
     .question {
-        font-size: 15px;
+        font-size: 0.93rem;
     }
 
     .timer {
-        margin: 0px 0 20px 0;
-        font-size: 10px;
+        margin: 0 0 1.25rem 0;
+        font-size: 0.62rem;
     }
 
     .options {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .option-btn {
-        font-size: 14px;
-        margin: 0px;
+        font-size: 0.87rem;
+        margin: 0;
     }
 
     .feedback {
-        font-size: 14px;
-        margin-top: 10px;
+        font-size: 0.87rem;
+        margin-top: 1.8rem;
     }
 
-    .end-message { 
-        font-size: 25px;
-        margin-top: 100px;
+    .end-message {
+        font-size: 1.56rem;
+        margin-top: 6.25rem;
     }
 
     #restart-btn {
-        padding: 5px 10px;
-        font-size: 10px;
-        margin-top: 0px;
+        padding: 0.3rem 0.62rem;
+        font-size: 0.8rem;
+        margin-top: 0;
     }
 
     .bart-message {
-        font-size: 10px;
-        margin-bottom: 85px;
+        font-size: 0.62rem;
+        margin-bottom: 2.5rem;
     }
 }
 
 /* Surface Duo */
 @media (max-width: 720px) {
 
+    #root {
+        width: 100%;
+    }
+
+    #start-btn {
+        bottom: 2.5rem;
+        left: 8rem;
+    }
+
     .game-container {
-        gap: 15px;
+        gap: 0.93rem;
     }
 
     .question {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .options {
-        gap: 30px;
+        gap: 1.87rem;
     }
 
     #next-btn {
-        font-size: 10px;
-        padding: 7px;
+        font-size: 0.6rem;
+        padding: 0.43rem;
     }
 
     .feedback {
-        margin-top: 30px;
+        margin-top: 1.87rem;
     }
 
     #end-container {
-        gap: 0px;
+        gap: 0;
     }
 
     .end-message {
-        font-size: 35px;
-        margin-top: 150px;
+        font-size: 2rem;
+        margin-top: 9.3rem;
     }
 
     .final-score {
-        font-size: 30px;
+        font-size: 1.87rem;
     }
 
     #restart-btn {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 
     .bart-message {
-        font-size: 13px;
+        font-size: 0.8rem;
+    }
+    
+    #skip-btn {
+        bottom: 6rem;
+        right: 2.5rem;
     }
 
     #fullscreen-btn {
-        bottom: 40px;
-        right: 40px;
+        bottom: 2.5rem;
+        right: 2.5rem;
     }
-
 }
 
-/* Iphone SE  */
+/* iPhone SE */
 @media (max-width: 680px) {
 
-    .score { 
-        margin-top: 0px;
-        font-size: 14px;
-        height: 35px;
+    .game-container {
+        width: 100%;
+    }
+
+    .score {
+        margin: 0;
+        font-size: 0.8rem;
+        height: 2.6rem;
     }
 
     #restart-currBtn {
-        font-size: 14px;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    #skip-btn {
+        bottom: 6rem;
+        right: 2.5rem;
     }
 
     .question {
-        font-size: 15px;
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
     }
 
     .timer {
-        margin: 0px 0 20px 0;
-        font-size: 10px;
+        margin: 0 0 1.25rem 0;
+        font-size: 0.625rem;
     }
 
     .options {
-        gap: 10px;
+        gap: 0.625rem;
     }
 
     .option-btn {
-        font-size: 14px;
-        margin: 0px;
+        font-size: 0.875rem;
+        margin: 0;
     }
 
     .feedback {
-        font-size: 14px;
-        margin-top: 10px;
+        font-size: 0.7rem;
+        margin-top: 0.4rem;
     }
 
-    .end-message { 
-        font-size: 25px;
-        margin-top: 100px;
+    #next-btn {
+        padding: 0.2rem 0.4rem;
+    }
+
+    .end-message {
+        font-size: 1.5625rem;
+        margin-top: 6.25rem;
     }
 
     #restart-btn {
-        padding: 5px 10px;
-        font-size: 10px;
-        margin-top: 0px;
+        padding: 0.3125rem 0.625rem;
+        font-size: 0.625rem;
+        margin-top: 0;
     }
 
     .bart-message {
-        font-size: 10px;
-        margin-bottom: 85px;
+        font-size: 0.625rem;
+        margin-bottom: 5.3125rem;
+    }
+
+    #fullscreen-btn {
+        bottom: 1.25rem;
+        right: 1.25rem;
     }
 }
 
-/* stående skärm start bakgrund */
+/* Portrait Background */
 @media (max-width: 450px) {
     body {
-        background-size: contain; /* Adjust to ensure the entire image fits within the screen */
-        background-position: top; /* Align the image to the top */
+        background-size: contain;
+        background-position: top;
     }
 }
