@@ -89,6 +89,7 @@ button:hover {
 .game-container {
     display: flex;
     flex-direction: column;
+    gap: 4rem;
     width: 90%;
     height: 100%;
     justify-content: center;
@@ -101,7 +102,7 @@ button:hover {
 .question {
     width: 70%;
     color: rgb(229, 217, 0);
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     margin: 1.2rem 0;
     
 }
@@ -129,10 +130,10 @@ button:hover {
 }
 
 .feedback {
-
     color: rgb(229, 217, 0);
     font-size: 1.9rem;
     margin-top: 6.25rem;
+    height: 1.5rem;
 }
 
 #next-btn {
@@ -175,8 +176,8 @@ button:hover {
 
 .timer {
     color: rgb(229, 217, 0);
-
     margin: 3.12rem;
+    font-size: 2rem;
 }
 
 #timer-count {
@@ -249,7 +250,7 @@ button:hover {
     
 #rotate-message {
     position: fixed;
-    animation: fadeInOut 5s ease-in-out;
+    animation: fadeInOut 2s ease-in-out;
     top: 5%;
     left: 50%;
     transform: translate(-50%, 50%);
