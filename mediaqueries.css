@@ -603,8 +603,8 @@
     }
 
     .game-container {
-        font-size: 0.9375rem;
-        gap: 0.125rem;
+        font-size: 0.9rem;
+        gap: 0.12rem;
     }
 
     .question {
@@ -626,12 +626,12 @@
     }
 
     .feedback {
-        font-size: 1.0625rem;
+        font-size: 1rem;
         margin-top: 1.25rem;
     }
 
     #next-btn {
-        padding: 0.3125rem 0.625rem;
+        padding: 0.3rem 0.62rem;
     }
 
     #end-container {
@@ -641,24 +641,24 @@
     }
 
     .end-message {
-        font-size: 2.1875rem;
-        margin-top: 4.0625rem;
+        font-size: 2rem;
+        margin-top: 4rem;
     }
 
     .final-score {
         font-size: 1.25rem;
-        margin-top: 2.8125rem;
+        margin-top: 2.8rem;
     }
 
     #restart-btn {
-        padding: 0.3125rem 0.625rem;
-        font-size: 0.9375rem;
-        margin-top: 2.8125rem;
+        padding: 0.31rem 0.62rem;
+        font-size: 0.9rem;
+        margin-top: 2.8rem;
     }
 
     .bart-message {
-        font-size: 0.9375rem;
-        margin-bottom: 2.8125rem;
+        font-size: 0.9rem;
+        margin-bottom: 2.8rem;
     }
 }
 
@@ -815,15 +815,15 @@
 
     .timer {
         margin: 0 0 1.25rem 0;
-        font-size: 0.625rem;
+        font-size: 0.62rem;
     }
 
     .options {
-        gap: 0.625rem;
+        gap: 0.62rem;
     }
 
     .option-btn {
-        font-size: 0.875rem;
+        font-size: 0.87rem;
         margin: 0;
     }
 
@@ -837,19 +837,19 @@
     }
 
     .end-message {
-        font-size: 1.5625rem;
+        font-size: 1.56rem;
         margin-top: 6.25rem;
     }
 
     #restart-btn {
-        padding: 0.3125rem 0.625rem;
-        font-size: 0.625rem;
+        padding: 0.3rem 0.62rem;
+        font-size: 0.62rem;
         margin-top: 0;
     }
 
     .bart-message {
-        font-size: 0.625rem;
-        margin-bottom: 5.3125rem;
+        font-size: 0.62rem;
+        margin-bottom: 5.31rem;
     }
 
     #fullscreen-btn {
