@@ -1,9 +1,14 @@
-@media (max-width: 2550px) {
-    .score {
+@media (max-width: 2560px) {
+    /* .score {
         top: 200px; 
         right: 440px; 
         font-size: 35px; 
         padding: 5px; 
+    } */
+
+    .game-container {
+        gap: 90px;
+        margin-bottom: 30px;
     }
 }
 
@@ -27,8 +32,13 @@
 /* iPad Pro */
 @media (max-width: 1380px) {
 
+    #root {
+        width: 100%;
+    }
+
     .game-container {
         width: 100%;
+        gap: 20px;
     }
 
     .score { 
@@ -69,8 +79,79 @@
     }
 }
 
+/* Surface Pro 7*/
+@media (max-width: 1368px) {
+
+    #root {
+        width: 90%;
+    }
+
+    .game-container {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .score { 
+        margin: 0 0 40px 0;
+        font-size: 30px;
+        height: 55px;
+    }
+
+    .question {
+        width: 80%;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .timer {
+        font-size: 20;
+        margin: 20px 0 50px 0;
+    }
+
+    .options {
+        gap: 55px;
+    }
+
+    .option-btn {
+        font-size: 28px;
+    }
+
+    .feedback {
+        margin-top: 50px;
+        font-size: 26px;
+    }
+
+    #end-container{
+        height: 500px;
+        width: 700px;
+        gap: 0px; 
+
+    }
+}
+
+/* Nest Hub Max */
+@media (max-width: 1280px) {
+
+    #root {
+        width: 85%;
+    }
+
+    .timer {
+        font-size: 17;
+        margin: 10px 0 30px 0;
+    }
+
+    .option-btn {
+        font-size: 25px;
+    }
+}
+
 /* iPad Air  */
 @media (max-width: 1200px) {
+
+    #root {
+        width: 90%;
+    }
 
     .game-container {
         width: 100%;
@@ -113,10 +194,18 @@
 /* iPad Mini  */
 @media (max-width: 1024px){
 
+    #root {
+        width: 100%;
+    }
+    
     .score { 
         margin-top: 0px;
         font-size: 27px;
         height: 45px;
+    }
+
+    .game-container {
+        width: 100%;
     }
 
     .question {
@@ -144,10 +233,21 @@
         gap: 0px; 
 
     }
+
+    #start-btn {
+        bottom: 100px;
+        left: 230px;
+    }
 }
 
 /* Iphone 14 Pro Max  */
 @media (max-width: 950px) {
+
+    #start-btn {
+
+        bottom: 20px;
+        left: 108px;
+    }
 
     #skip-btn {
         padding: 10px 20px;  
@@ -156,14 +256,24 @@
     .score { 
         font-size: 20px;
         height: 45px;
+        margin: 0px 0px 0px 20px;
+    }
+
+
+    #restart-currBtn {
+        font-size: 12px;
+        
     }
 
     .game-container {
         font-size: 15px;
+        margin-bottom: 20px;
+        gap: 12px;
     }
 
     .question {
         font-size: 20px;
+        margin-top: 20px;
     }
 
     .timer {
@@ -183,6 +293,11 @@
     .feedback {
         font-size: 17px;
         margin-top: 20px;
+    }
+
+    #next-btn {
+        padding: 4px 8px;
+        border-radius: 5px;
     }
 
     #end-container{
@@ -214,8 +329,13 @@
     }
 }
 
+
 /* Samsung Galaxy A51/71 */
 @media (max-width: 914px) {
+
+    #root {
+        width: 80%;
+    }
 
     .score { 
         font-size: 15px;
@@ -229,6 +349,7 @@
 
     .game-container {
         font-size: 15px;
+
     }
 
     .question {
@@ -356,20 +477,26 @@
 }
 
 
-/* Iphone 12 pro */
-@media (max-width: 850px) {
+/* Galaxy Z fold 5 */
+@media (max-width: 882px) {
+
+    #root {
+        width: 80%;
+    }
 
     .score { 
-        font-size: 20px;
-        height: 45px;
+        font-size: 15px;
+        height: 35px;
     }
 
     .game-container {
         font-size: 15px;
+        gap: 0;
     }
 
     .question {
-        font-size: 20px;
+        font-size: 15px;
+        margin: 20px 0 20px 0;
     }
 
     .timer {
@@ -382,13 +509,14 @@
     }
 
     .option-btn {
-        font-size: 20px;
+        font-size: 15px;
         margin: 0px;
     }
 
     .feedback {
         font-size: 17px;
-        margin-top: 20px;
+        margin-top: 30px;
+        
     }
 
     #end-container{
@@ -418,6 +546,84 @@
         font-size: 15px;
         margin-bottom: 40px;
     }
+
+}
+
+
+/* Iphone 12 pro */
+@media (max-width: 850px) {
+
+    .score { 
+        font-size: 20px;
+        height: 35px;
+        margin-bottom: 23px;
+    }
+
+    .game-container {
+        font-size: 15px;
+        gap: 2px;
+    }
+
+    .question {
+        font-size: 20px;
+
+    }
+
+    .timer {
+        margin: 20px;
+        font-size: 10px;
+    }
+
+    .options {
+        gap: 20px;
+    }
+
+    .option-btn {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .feedback {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+    #next-btn {
+        padding: 5px 10px;
+    }
+
+    #end-container{
+        height: 100%;
+        width: 100%;
+        gap: 0px; 
+
+    }
+
+    .end-message { 
+        font-size: 35px;
+        margin-top: 65px;
+    }
+
+    .final-score { 
+        font-size: 20px;
+        margin-top: 45px;
+    }
+
+    #restart-btn {
+        padding: 5px 10px;
+        font-size: 15px;
+        margin-top: 40px;
+    }
+
+    .bart-message {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Samsung Galaxy s24 Ultra */
+@media (max-width: 750px) {
+
 }
 
 /* samsung galaxy S8 */
@@ -476,6 +682,10 @@
 /* Surface Duo */
 @media (max-width: 720px) {
 
+    .game-container {
+        gap: 15px;
+    }
+
     .question {
         margin-top: 0px;
     }
@@ -513,6 +723,12 @@
     .bart-message {
         font-size: 13px;
     }
+
+    #fullscreen-btn {
+        bottom: 40px;
+        right: 40px;
+    }
+
 }
 
 /* Iphone SE  */
@@ -568,3 +784,10 @@
     }
 }
 
+/* stående skärm start bakgrund */
+@media (max-width: 450px) {
+    body {
+        background-size: contain; /* Adjust to ensure the entire image fits within the screen */
+        background-position: top; /* Align the image to the top */
+    }
+}
