@@ -86,7 +86,7 @@ export default class FullscreenHandler {
             document.body.appendChild(this.fullscreenButton);
 
             this.fullscreenButton.addEventListener("click", () => this.enterFullscreen());
-            this.fullscreenButton.addEventListener("touchend", (event) => {
+            this.fullscreenButton.addEventListener("touchend", (event) => { //this is added for test iOS full screen functionality
                 event.preventDefault();
                 this.enterFullscreen();
             });
@@ -110,7 +110,7 @@ export default class FullscreenHandler {
 
 
     enterFullscreen() {
-        const docElement = document.documentElement;
+        const docElement = document.getElementById('root') || document.documentElement; //document.getELementByID('root') is test for iOS fullscreen functionality
         if (docElement.requestFullscreen) {
             docElement.requestFullscreen();
         } else if (docElement.webkitRequestFullscreen) {
@@ -146,7 +146,7 @@ export default class FullscreenHandler {
         document.body.appendChild(exitFullscreenButton);
 
         exitFullscreenButton.addEventListener("click", () => this.exitFullscreen(exitFullscreenButton));
-        exitFullscreenButton.addEventListener("touchend", (event) => {
+        exitFullscreenButton.addEventListener("touchend", (event) => {  //this is added for test iOS full screen functionality
             event.preventDefault();
             this.exitFullscreen(exitFullscreenButton);
         })
