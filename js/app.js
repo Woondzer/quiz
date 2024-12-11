@@ -265,8 +265,10 @@ startVideoTransition() {
         }
         
         document.getElementById("restart-btn").addEventListener("click", () => {
-            sessionStorage.setItem('skipIntro', 'true');
-            location.reload();
+            // sessionStorage.setItem('skipIntro', 'true');
+            // location.reload();
+            this.resetGame();
+            this.startShortIntro();
         });
     }
 }
