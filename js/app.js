@@ -189,6 +189,14 @@ startVideoTransition() {
     handleAnswer(selectedOption, correctAnswer) {
         const feedbackDiv = document.querySelector('.feedback');
         const optionsDiv = document.querySelector('.options')
+        const restartButton = document.getElementById('restart-currBtn');
+
+        if (restartButton) {
+            restartButton.disabled = true;
+            setTimeout(() => {
+                restartButton.disabled = false;
+            }, 2500);
+        }
 
         if (selectedOption === correctAnswer) {
             this.score++;
