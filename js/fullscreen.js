@@ -25,7 +25,7 @@ export default class FullscreenHandler {
     renderRotateMessage() {
         const rotateMessage = document.createElement("div");
         rotateMessage.id = "rotate-message";
-        rotateMessage.textContent = "Please rotate your phone to start the game!";
+        rotateMessage.textContent = "Please rotate your phone!";
         document.body.appendChild(rotateMessage);
     }
 

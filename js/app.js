@@ -162,6 +162,7 @@ startVideoTransition() {
         intro.autoplay = true;
         intro.mute = false;
         intro.playInLine = true;
+        intro.setAttribute("playsinline", "true");
 
         document.body.appendChild(intro);
 
