@@ -130,7 +130,7 @@ export default class FullscreenHandler {
     }
 
     renderExitFullscreenButton() {
-       if (!this.exitFullscreenButton){
+        if (!this.exitFullscreenButton) {
             this.exitFullscreenButton = document.createElement("button");
             this.exitFullscreenButton.id = "exit-fullscreen-btn";
             this.exitFullscreenButton.innerHTML = `
@@ -169,13 +169,21 @@ export default class FullscreenHandler {
 
     //iOS function to hide or show the toolbar instead of fullscreen
     hideToolbar() {
-        window.scrollTo({ top: 1, behavior: "auto"});
-        this.preventManualScroll();
+        try {
+            window.scrollTo({ top: 1, behavior: "auto" });
+            this.preventManualScroll();
+        } catch (error) {
+            console.error("Failed to hide toolbar:", error);
+        }
     }
-
+    
     showToolbar() {
-        window.scrollTo({ top: 0, behavior: "auto"});
-        this.allowManualScroll();
+        try {
+            window.scrollTo({ top: 0, behavior: "auto" });
+            this.allowManualScroll();
+        } catch (error) {
+            console.error("Failed to show toolbar:", error);
+        }
     }
 
     preventManualScroll() {
