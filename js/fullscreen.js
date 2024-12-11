@@ -86,6 +86,10 @@ export default class FullscreenHandler {
             document.body.appendChild(this.fullscreenButton);
 
             this.fullscreenButton.addEventListener("click", () => this.enterFullscreen());
+            this.fullscreenButton.addEventListener("touchend", (event) => {
+                event.preventDefault();
+                this.enterFullscreen();
+            });
         }
 
         this.fullscreenButton.style.display = "block"; 
@@ -113,8 +117,8 @@ export default class FullscreenHandler {
             docElement.webkitRequestFullscreen(); // Safari
         } else if (docElement.msRequestFullscreen) {
             docElement.msRequestFullscreen(); // IE11
-        }
-
+        } 
+        
         if (this.fullscreenButton) {
             this.fullscreenButton.style.display = "none"; // Hide the fullscreen button
         }
@@ -142,6 +146,10 @@ export default class FullscreenHandler {
         document.body.appendChild(exitFullscreenButton);
 
         exitFullscreenButton.addEventListener("click", () => this.exitFullscreen(exitFullscreenButton));
+        exitFullscreenButton.addEventListener("touchend", (event) => {
+            event.preventDefault();
+            this.exitFullscreen(exitFullscreenButton);
+        })
     }
 
     exitFullscreen(button) {
