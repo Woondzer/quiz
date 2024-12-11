@@ -80,6 +80,20 @@ startVideoTransition() {
         this.renderQuestion();
     }
 
+    resetGame() {
+
+        if (this.timer) {
+            clearInterval(this.timer);
+            this.timer = null;
+        }
+
+        this.currentQuestionIndex = 0;
+        this.score = 0;
+        this.selectedQuestions = this.getRandomQuestions(10);
+
+        this.root.innerHTML = "";
+    }
+
     getRandomQuestions(count) {
         const shuffled = [...this.quizData];
         for(let i = shuffled.length - 1; i > 0; i--) {
@@ -122,8 +136,10 @@ startVideoTransition() {
         `;
         
         document.getElementById("restart-currBtn").addEventListener("click", () => {
-            sessionStorage.setItem('skipIntro', 'true');
-            location.reload();
+            // sessionStorage.setItem('skipIntro', 'true');
+            // location.reload();
+            this.resetGame();
+            this.startShortIntro();
         });
 
         
