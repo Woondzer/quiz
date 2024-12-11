@@ -14,6 +14,10 @@ export default class FullscreenHandler {
         }
     }
 
+    isIOS() {
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    }
+
 
     // values for what screens to handle as "phones"
     checkIfPhone() {
@@ -85,7 +89,11 @@ export default class FullscreenHandler {
         `;
             document.body.appendChild(this.fullscreenButton);
 
-            this.fullscreenButton.addEventListener("click", () => this.enterFullscreen());
+            if (this.isIOS()) {
+                this.fullscreenButton.addEventListener("click", () => this.hideToolbar());
+            } else {
+                this.fullscreenButton.addEventListener("click", () => this.enterFullscreen());
+            }
         }
 
         this.fullscreenButton.style.display = "block"; 
@@ -122,26 +130,60 @@ export default class FullscreenHandler {
     }
 
     renderExitFullscreenButton() {
-        const exitFullscreenButton = document.createElement("button");
-        exitFullscreenButton.id = "exit-fullscreen-btn";
-        exitFullscreenButton.innerHTML = `
-        <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-        <svg height="20px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="20px" 
-             xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="Layer_1"/>
-            <g id="fullscreen_x5F_exit_x5F_alt">
-                <g>
-                    <polygon points="22.586,25.414 29.172,32 32,29.172 25.414,22.586 28,20 20,20 20,28" style="fill:#FFFFFF;"/>
-                    <polygon points="6.547,9.371 4,12 11.961,11.957 12,4 9.375,6.543 2.828,0 0,2.828" style="fill:#FFFFFF;"/>
-                    <polygon points="0,29.172 2.828,32 9.414,25.414 12,28 12,20 4,20 6.586,22.586" style="fill:#FFFFFF;"/>
-                    <polygon points="28.031,12 25.438,9.404 32,2.838 29.164,0 22.598,6.566 20,3.971 20,12" style="fill:#FFFFFF;"/>
+       if (!this.exitFullscreenButton){
+            this.exitFullscreenButton = document.createElement("button");
+            this.exitFullscreenButton.id = "exit-fullscreen-btn";
+            this.exitFullscreenButton.innerHTML = `
+            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg height="20px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="20px" 
+                 xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Layer_1"/>
+                <g id="fullscreen_x5F_exit_x5F_alt">
+                    <g>
+                        <polygon points="22.586,25.414 29.172,32 32,29.172 25.414,22.586 28,20 20,20 20,28" style="fill:#FFFFFF;"/>
+                        <polygon points="6.547,9.371 4,12 11.961,11.957 12,4 9.375,6.543 2.828,0 0,2.828" style="fill:#FFFFFF;"/>
+                        <polygon points="0,29.172 2.828,32 9.414,25.414 12,28 12,20 4,20 6.586,22.586" style="fill:#FFFFFF;"/>
+                        <polygon points="28.031,12 25.438,9.404 32,2.838 29.164,0 22.598,6.566 20,3.971 20,12" style="fill:#FFFFFF;"/>
+                    </g>
                 </g>
-            </g>
-        </svg>
-    `;
-        document.body.appendChild(exitFullscreenButton);
+            </svg>
+        `;
+        document.body.appendChild(this.exitFullscreenButton);
 
-        exitFullscreenButton.addEventListener("click", () => this.exitFullscreen(exitFullscreenButton));
+        if (this.isIOS()) {
+            this.exitFullscreenButton.addEventListener("click", () => {
+                this.showToolbar();
+                if (this.exitFullscreenButton) {
+                    this.exitFullscreenButton.style.display = "none";
+                }
+                this.renderFullscreenButton();
+            });
+        } else {
+            this.exitFullscreenButton.addEventListener("click", () => this.exitFullscreen());
+        }
+    }
+
+    this.exitFullscreenButton.style.display = "block";
+}
+
+
+    //iOS function to hide or show the toolbar instead of fullscreen
+    hideToolbar() {
+        window.scrollTo({ top: 1, behavior: "auto"});
+        this.preventManualScroll();
+    }
+
+    showToolbar() {
+        window.scrollTo({ top: 0, behavior: "auto"});
+        this.allowManualScroll();
+    }
+
+    preventManualScroll() {
+        document.body.style.overflow = "hidden";
+    }
+
+    allowManualScroll() {
+        document.body.style.overflow = "";
     }
 
     exitFullscreen(button) {
