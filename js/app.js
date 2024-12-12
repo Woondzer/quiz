@@ -49,6 +49,7 @@ startVideoTransition() {
     intro.muted = false;
     intro.playsInline = true;
     intro.playbackRate = 1.0; // test to force play whole intro on firefox
+    intro.load(); // test for force play whole intro on firefox
 
     document.body.appendChild(intro);
 
@@ -64,6 +65,7 @@ startVideoTransition() {
 
     skipButton.addEventListener("click", () => {
         intro.src = "./movie/simpsonNEWshortVersion.mp4";
+        intro.load(); // test for force play whole intro on firefox
         intro.play();
         skipButton.remove();
     });
