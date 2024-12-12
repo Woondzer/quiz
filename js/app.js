@@ -23,7 +23,6 @@ class QuizGame {
     }
 
     init() {
-        // this.renderStartPage();
         const skipIntro = sessionStorage.getItem('skipIntro');
         if (skipIntro === 'true') {
             sessionStorage.removeItem('skipIntro');
@@ -37,7 +36,7 @@ class QuizGame {
         this.root.innerHTML = `
             <button id="start-btn" style="display: none;">Start Game</button>
         `;
-        document.getElementById("start-btn").addEventListener("click", () => this.startVideoTransition()); //this.startGame()
+        document.getElementById("start-btn").addEventListener("click", () => this.startVideoTransition()); 
     }
 
 startVideoTransition() {
@@ -49,8 +48,7 @@ startVideoTransition() {
     intro.autoplay = true;
     intro.muted = false;
     intro.playsInline = true;
-    intro.playbackRate = 1.0; // test to force play whole intro on firefox
-    intro.load(); // test for force play whole intro on firefox
+
 
     document.body.appendChild(intro);
 
@@ -66,7 +64,6 @@ startVideoTransition() {
 
     skipButton.addEventListener("click", () => {
         intro.src = "./movie/simpsonNEWshortVersion2comp.mp4";
-        intro.load(); // test for force play whole intro on firefox
         intro.play();
         skipButton.remove();
     });
@@ -140,8 +137,6 @@ startVideoTransition() {
         `;
         
         document.getElementById("restart-currBtn").addEventListener("click", () => {
-            // sessionStorage.setItem('skipIntro', 'true');
-            // location.reload();
             this.resetGame();
             this.startShortIntro();
         });
@@ -166,7 +161,6 @@ startVideoTransition() {
         intro.autoplay = true;
         intro.mute = false;
         intro.playInLine = true;
-        intro.playbackRate = 1.0; // test to force play whole intro on firefox
         intro.setAttribute("playsinline", "true");
 
         document.body.appendChild(intro);
@@ -279,8 +273,6 @@ startVideoTransition() {
         }
         
         document.getElementById("restart-btn").addEventListener("click", () => {
-            // sessionStorage.setItem('skipIntro', 'true');
-            // location.reload();
             this.resetGame();
             this.startShortIntro();
         });
