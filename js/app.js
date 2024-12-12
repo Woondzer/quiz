@@ -65,7 +65,7 @@ startVideoTransition() {
     document.body.appendChild(skipButton);
 
     skipButton.addEventListener("click", () => {
-        intro.src = "./movie/simpsonNEWshortVersion2comp.mp4";
+        intro.src = "./movie/simpsonNEWshortVersion.mp4";
         intro.load(); // test for force play whole intro on firefox
         intro.play();
         skipButton.remove();
@@ -161,7 +161,7 @@ startVideoTransition() {
 
     startShortIntro() {
         const intro = document.createElement("video");
-        intro.src = "./movie/simpsonNEWshortVersion2comp.mp4";
+        intro.src = "./movie/simpsonNEWshortVersion.mp4";
         intro.classList.add("intro-background");
         intro.autoplay = true;
         intro.mute = false;
