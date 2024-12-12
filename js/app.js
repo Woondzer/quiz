@@ -48,6 +48,7 @@ startVideoTransition() {
     intro.autoplay = true;
     intro.muted = false;
     intro.playsInline = true;
+    intro.playbackRate = 1.0; // test to force play whole intro on firefox
 
     document.body.appendChild(intro);
 
@@ -162,6 +163,7 @@ startVideoTransition() {
         intro.autoplay = true;
         intro.mute = false;
         intro.playInLine = true;
+        intro.playbackRate = 1.0; // test to force play whole intro on firefox
         intro.setAttribute("playsinline", "true");
 
         document.body.appendChild(intro);
